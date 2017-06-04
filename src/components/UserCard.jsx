@@ -1,11 +1,12 @@
-import React from 'react';
+import React     from 'react';
+import PropTypes from 'prop-types';
 
 export default class UserCard extends React.Component {
   static propTypes = {
-    userName: React.PropTypes.string,
-    isLogged: React.PropTypes.bool,
-    login   : React.PropTypes.func,
-    logout  : React.PropTypes.func
+    userName: PropTypes.string,
+    isLogged: PropTypes.bool,
+    login   : PropTypes.func,
+    logout  : PropTypes.func
   }
 
   handleLogin = () => {
