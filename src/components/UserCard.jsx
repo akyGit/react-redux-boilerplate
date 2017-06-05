@@ -1,6 +1,8 @@
 import React     from 'react';
 import PropTypes from 'prop-types';
 
+import './UserCard.less';
+
 export default class UserCard extends React.Component {
   static propTypes = {
     userName: PropTypes.string,
