@@ -14,7 +14,6 @@ class App extends React.Component {
     render() {
         return (
             <div>
-              <span>react-redux-boilerplate</span>
               <UserCard />
             </div>
         );
