@@ -8,13 +8,13 @@ import reducers        from './reducers';
 
 const store = createStore(reducers);
 
-import UserCard from './containers/UserCard.js';
+import Container from './containers/Container.js';
 
 class App extends React.Component {
     render() {
         return (
             <div>
-              <UserCard />
+              <Container />
             </div>
         );
     }

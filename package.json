@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "",
   "scripts": {
-    "dev-start": "cross-env NODE_ENV=development webpack-dev-server --content-base public/",
+    "start": "cross-env NODE_ENV=development webpack-dev-server --content-base public/",
     "build": "cross-env NODE_ENV=production webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

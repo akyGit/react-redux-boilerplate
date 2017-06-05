@@ -1,6 +1,6 @@
 import { connect }         from 'react-redux';
 
-import UserCard            from '../components/UserCard.jsx';
+import Container           from '../components/Container.jsx';
 import * as SessionActions from '../actions/SessionActions.js';
 
 function mapStateToProps(state) {
@@ -12,4 +12,4 @@ function mapStateToProps(state) {
 
 export default connect(mapStateToProps, {
   ...SessionActions
-})(UserCard);
+})(Container);

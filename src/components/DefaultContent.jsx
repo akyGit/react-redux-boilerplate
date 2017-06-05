@@ -1,29 +1,29 @@
 import React     from 'react';
 import PropTypes from 'prop-types';
 
-import './UserCard.less';
+import './DefaultContent.less';
 
-export default class UserCard extends React.Component {
+export default class DefaultContent extends React.Component {
   static propTypes = {
     userName: PropTypes.string,
     isLogged: PropTypes.bool,
-    login   : PropTypes.func,
-    logout  : PropTypes.func
+    onLogin : PropTypes.func,
+    onLogout: PropTypes.func
   }
 
   handleLogin = () => {
-    this.props.login(this.userName.value);
+    this.props.onLogin(this.userName.value);
   }
 
   handleLogout = () => {
-    this.props.logout();
+    this.props.onLogout();
   }
 
   render() {
     const { userName, isLogged } = this.props;
 
     return (
-      <div className='UserCard'>
+      <div className='DefaultContent'>
         <h1>react-redux-boilerplate</h1>
         <div className='invite'>
           { isLogged
