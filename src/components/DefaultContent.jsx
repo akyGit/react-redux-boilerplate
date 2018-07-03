@@ -32,7 +32,7 @@ export default class DefaultContent extends React.Component {
         </div>
         { !isLogged 
           ? <input className='textInput' ref={(userName) => this.userName = userName}></input> 
-          : null}
+          : null }
         { !isLogged 
           ? <button className='button' onClick={this.handleLogin}>Login</button> 
           : <button className='button' onClick={this.handleLogout}>Logout</button> }

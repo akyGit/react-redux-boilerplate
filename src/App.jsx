@@ -13,9 +13,7 @@ import Container from './containers/Container.js';
 class App extends React.Component {
     render() {
         return (
-            <div>
-              <Container />
-            </div>
+            <Container />
         );
     }
 }
