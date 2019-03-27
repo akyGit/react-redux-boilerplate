@@ -1,11 +1,11 @@
 import React     from 'react';
 import PropTypes from 'prop-types';
 
-import DefaultContent from './DefaultContent.jsx';
+import DefaultContent from './subcomponents/DefaultContent';
 
-import './Container.less';
+import './MainPage.less';
 
-export default class Container extends React.Component {
+export default class MainPage extends React.Component {
   static propTypes = {
     userName: PropTypes.string,
     isLogged: PropTypes.bool,
@@ -25,7 +25,7 @@ export default class Container extends React.Component {
     const { userName, isLogged } = this.props;
 
     return (
-      <div className='Container'>
+      <div className='MainPage'>
         <div className='Content'>
           <DefaultContent
             userName = {this.props.userName}

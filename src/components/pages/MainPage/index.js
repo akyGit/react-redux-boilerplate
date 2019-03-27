@@ -1,7 +1,7 @@
 import { connect }         from 'react-redux';
 
-import Container           from '../components/Container.jsx';
-import * as SessionActions from '../actions/SessionActions.js';
+import * as SessionActions from '../../../actions/SessionActions';
+import MainPage            from './MainPage';
 
 function mapStateToProps(state) {
   return {
@@ -12,4 +12,4 @@ function mapStateToProps(state) {
 
 export default connect(mapStateToProps, {
   ...SessionActions
-})(Container);
+})(MainPage);

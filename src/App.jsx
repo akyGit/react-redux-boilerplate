@@ -8,12 +8,12 @@ import reducers        from './reducers';
 
 const store = createStore(reducers);
 
-import Container from './containers/Container.js';
+import MainPage from './components/pages/MainPage';
 
 class App extends React.Component {
     render() {
         return (
-            <Container />
+            <MainPage />
         );
     }
 }
